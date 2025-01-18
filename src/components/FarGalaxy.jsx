@@ -34,13 +34,16 @@ const FarGalaxy = () => {
     return (
         <>
             {
-                isLoading ? (<p className="farGalaxy">Downloading</p>) :
+                isLoading ?
+                    <div style={{display: 'flex'}}>
+                        <div className="spinner-border farGalaxy" role="status"></div>
+                        <div className="farGalaxy">Downloading</div>
+                    </div> :
                     error ? (<p className="farGalaxy">{error}</p>) :
                         (<p className="farGalaxy">{openingCrowl.crowl}</p>)
             }
         </>
     );
-
 }
 
 export default FarGalaxy;

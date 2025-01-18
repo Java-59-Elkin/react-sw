@@ -1,0 +1,41 @@
+
+header, footer {
+  background-color: rgba(60, 69, 67, 0.6);
+}
+
+footer {
+  height: 5rem;
+}
+
+.bottomLeft {
+  border-bottom-left-radius: 1rem;
+}
+
+.bottomRight {
+  border-bottom-right-radius: 1rem;
+}
+
+.farGalaxy {
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 0.2em;
+}
+
+.float-start {
+  box-shadow: 10px 10px rgba(60, 69, 67, 0.6);
+  width: 100%;
+}
+
+.btn-danger {
+  border: 2px solid black;
+  background-color: rgba(204, 3, 35, 0.5);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #eedb00;
+}
+
+.border {
+  border: 1px solid #eedb00 !important;
+}

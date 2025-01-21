@@ -12,6 +12,6 @@ export const navItems = ['Home', 'About Me', 'Star Wars', 'Contact'];
 
 export const friends = [friend1, friend2, friend3, friend4, friend5, friend6, friend7, friend8, friend9];
 
-export const openingCrawl = 'https://sw-info-api.herokuapp.com/v1/films';
+export const baseURL = 'https://sw-info-api.herokuapp.com';
 
-export const id = Math.floor(Math.random() * 6 + 1).toString();
+export const episode = Math.floor(Math.random() * 6 + 1).toString();

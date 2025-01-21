@@ -1,7 +1,5 @@
-import {openingCrawl} from "../utils/constants.js";
-import {id} from "../utils/constants.js";
-
-console.log(id);
+import {baseURL} from "../utils/constants.js";
+import {episode} from "../utils/constants.js";
 
 import {useEffect, useState} from "react";
 
@@ -12,7 +10,7 @@ const FarGalaxy = () => {
 
     const getFarGalaxy = async () => {
         try {
-            const response = await fetch(`${openingCrawl}/${id}`)
+            const response = await fetch(`${baseURL}/v1/films/${episode}`)
             if (!response.ok) {
                 throw new Error('Ooops. Try again later');
             }

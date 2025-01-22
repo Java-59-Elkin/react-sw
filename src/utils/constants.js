@@ -14,4 +14,3 @@ export const friends = [friend1, friend2, friend3, friend4, friend5, friend6, fr
 
 export const baseURL = 'https://sw-info-api.herokuapp.com';
 
-export const episode = Math.floor(Math.random() * 6 + 1).toString();

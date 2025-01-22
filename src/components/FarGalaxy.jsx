@@ -35,7 +35,7 @@ const FarGalaxy = () => {
                 isLoading ?
                     <div style={{display: 'flex'}}>
                         <div className="spinner-border farGalaxy" role="status"></div>
-                        <div className="farGalaxy">Downloading</div>
+                        <div className="farGalaxy">Loading</div>
                     </div> :
                     error ? (<p className="farGalaxy">{error}</p>) :
                         (<p className="farGalaxy">{openingCrowl.crowl}</p>)

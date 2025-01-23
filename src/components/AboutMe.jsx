@@ -3,8 +3,8 @@ import {useEffect, useState} from "react";
 
 const aboutMe = () => {
     const [aboutHero, setAboutHero] = useState({});
-    const about_hero = sessionStorage.getItem('about_hero')
-    ? JSON.parse(sessionStorage.getItem('about_hero'))
+    const about_hero = localStorage.getItem('about_hero')
+    ? JSON.parse(localStorage.getItem('about_hero'))
     : null;
 
     const getAboutMe = async () => {
@@ -16,7 +16,7 @@ const aboutMe = () => {
             image: data.image,
             height: data.height
         });
-        sessionStorage.setItem('about_hero', JSON.stringify({
+        localStorage.setItem('about_hero', JSON.stringify({
             name: data.name,
             gender: data.gender,
             image: data.image,

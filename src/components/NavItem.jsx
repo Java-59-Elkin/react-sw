@@ -1,7 +1,6 @@
-// eslint-disable-next-line react/prop-types
 const NavItem = ({itemTitle, changePage}) => {
     return (
-        <li onClick={() => changePage(itemTitle)} className="nav-item btm-item btm btn-danger mx-1">{itemTitle}</li>
+        <li onClick={() => changePage(itemTitle)} className={'bg-red-color border-black border-2 rounded-md px-3 py-2 cursor-pointer hover:bg-red-500 hover:text-white'}>{itemTitle}</li>
     );
 };
 

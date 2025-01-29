@@ -1,15 +1,13 @@
-
-// eslint-disable-next-line react/prop-types
 const Friend = ({picture, pos}) => {
-    let styles = 'col-4 p-1 ';
+    let styles = "w-full";
     if (pos === 7) {
-        styles += 'bottomLeft';
+        styles += ' rounded-bl-2xl'
     }
     if (pos === 9) {
-        styles += 'bottomRight';
+        styles += ' rounded-br-2xl'
     }
     return (
-        <img className={styles} src={picture} alt='Friend'/>
+        <img className={styles} src={picture} alt="Friend"/>
     );
 };
 

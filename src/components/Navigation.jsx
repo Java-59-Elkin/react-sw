@@ -1,11 +1,10 @@
-import NavItem from './NavItem.jsx';
-import {navItems} from '../utils/constants.js';
+import NavItem from "./NavItem.jsx";
+import {navItems} from "../utils/constants.js";
 
-// eslint-disable-next-line react/prop-types
 const Navigation = ({changePage}) => {
     return (
-        <nav>
-            <ul className="nav position-fixed top mt-2 ms-5">
+        <nav className={'fixed top-2 left-12'}>
+            <ul className={'flex gap-4'}>
                 {navItems.map(item => <NavItem changePage={changePage} itemTitle={item} key={item}/>)}
             </ul>
         </nav>
@@ -13,4 +12,3 @@ const Navigation = ({changePage}) => {
 };
 
 export default Navigation;
-

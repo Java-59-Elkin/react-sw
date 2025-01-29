@@ -1,8 +1,7 @@
 import Home from "./Home.jsx";
-import Contact from "./Contact.jsx";
-import StarWars from "./StarWars.jsx";
 import AboutMe from "./AboutMe.jsx";
-import {useState} from "react";
+import StarWars from "./StarWars.jsx";
+import Contact from "./Contact.jsx";
 import {navItems} from "../utils/constants.js";
 
 const Main = ({page}) => {

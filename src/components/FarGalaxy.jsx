@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {base_url} from "../utils/constants.js";
 import main from "../assets/main.jpg";
+import StyledText from "./StyledText.jsx";
 
 const FarGalaxy = () => {
     const [openingCrawl, setOpeningCrawl] = useState('Loading...');
@@ -21,11 +22,7 @@ const FarGalaxy = () => {
         return () => console.log("FarGalaxy was unmounted");
     }, [])
 
-    return (
-        <p className={'text-[2em] tracking-[.2em] leading-[1.5] text-justify p-[.2em]'}>
-            {openingCrawl}
-        </p>
-    )
+    return <StyledText>{openingCrawl}</StyledText>;
 }
 
 export default FarGalaxy;

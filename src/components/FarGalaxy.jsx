@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
-import {base_url} from "../utils/constants.js";
-import main from "../assets/main.jpg";
+import {base_url, starWarsInfo} from "../utils/constants.js";
 import StyledText from "./StyledText.jsx";
+// import main from "../assets/main.jpg";
+// import StyledText from "./StyledText.jsx";
 
 const FarGalaxy = () => {
     const [openingCrawl, setOpeningCrawl] = useState('Loading...');
@@ -21,8 +22,7 @@ const FarGalaxy = () => {
         }
         return () => console.log("FarGalaxy was unmounted");
     }, [])
-
-    return <StyledText>{openingCrawl}</StyledText>;
+    return <StyledText content={openingCrawl} />;
 }
 
 export default FarGalaxy;

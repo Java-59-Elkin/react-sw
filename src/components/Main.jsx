@@ -3,8 +3,6 @@ import AboutMe from "./AboutMe.jsx";
 import StarWars from "./StarWars.jsx";
 import Contact from "./Contact.jsx";
 import {navItems} from "../utils/constants.js";
-import {useState} from "react";
-import FarGalaxy from "./FarGalaxy.jsx";
 
 const Main = ({page}) => {
 
